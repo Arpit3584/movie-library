@@ -29,7 +29,7 @@ type="text"
 onChange={(e)=>setQuery(e.target.value)}
 value={query}
 placeholder='Search anything'/>
-{query.length>0&&<i onClick={()=>setQuery("")} className=" absolute text-zinc-400 text-3xl right-0 ri-close-fill"></i>}
+{query.length>0&&<i onClick={()=>setQuery("")} className=" absolute text-zinc-400 text-2xl right-0 ri-close-fill"></i>}
 
 <div className='absolute w-[50%] max-h-[50vh] bg-zinc-200 top-[80%] overflow-auto'>
 {searches?.map((s,i)=>(<Link key={i} 

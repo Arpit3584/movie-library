@@ -42,7 +42,7 @@ const Home = () => {
 
       useEffect(()=>{
           !wallPaper && GetHeaderWallpaper();
-       GetTrendingMovies();
+     GetTrendingMovies();
       },[category])
   return (wallPaper && TrendingMovies)? (
     <>
