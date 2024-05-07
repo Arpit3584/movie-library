@@ -73,7 +73,7 @@ const Tvshows = () => {
       next={GetTrendingMovies}
       hasMore={hasMore}
       loader={<h1>Loading....</h1>}>
-      <Cards data={trending} title={category}/>
+      <Cards data={trending} title="tv"/>
       </InfiniteScroll>
        
 

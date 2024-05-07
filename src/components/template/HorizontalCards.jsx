@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 const HorizontalCards = ({ data }) => {
@@ -7,10 +8,12 @@ const HorizontalCards = ({ data }) => {
 
   return (
     
-    <div className='w-[100%]  flex overflow-y-hidden mb-5' >
+    <div
+     className='w-[100%]  flex overflow-y-hidden mb-5' >
        {
-        data?.map((d,i)=>(
-          <div key={i} className='min-w-[15%] mr-5 p-5'>
+        data.length>0?data?.map((d,i)=>(
+          <Link to={`/${d.media_type}/details/${d.id}`}
+           key={i} className='min-w-[15%] mr-5 p-5'>
             <img className='w-full h-[40%] object-cover'
             src={`https://image.tmdb.org/t/p/original/${d.backdrop_path||d.profile_path}`}/>
             <div className=' text-white h-[30vh]'>
@@ -29,7 +32,8 @@ const HorizontalCards = ({ data }) => {
              
             
           
-        </div>))}
+        </Link>)):<h1 className='text-white'>Nothing to recommend</h1>
+        }
        
     </div>
     
