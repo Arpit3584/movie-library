@@ -29,7 +29,7 @@ console.log(info);
         position:'relative'
       }
     }
-    className=' w-screen h-[150vh] px-[10%] overflow-y-auto'>  
+    className=' w-screen h-[200vh] px-[10%] overflow-y-auto'>  
   
       <nav className='w-full h-[10vh] items-center text-zinc-100 flex gap-10 text-xl'>
         <Link onClick={()=>navigate(-1)} 
@@ -91,11 +91,11 @@ Play Trailer
 </div>
 
 
-{/* recommendations*/}
+{/* Seasons*/}
 
 <hr className='mt-10 mb-5 border-none h-[1px] bg-zinc-200'></hr>
   <h1 className='text-2xl font-semibold text-white m-2'> Seasons</h1>
-  <div className='w-[100%] flex overflow-y-hidden mb-5 p-5'>
+  <div className='w-[100%] flex overflow-y-hidden mb-5 p-5 '>
 
     {
       info.detail.seasons.map((s,i)=>(

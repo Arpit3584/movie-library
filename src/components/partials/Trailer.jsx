@@ -43,6 +43,7 @@ className='absolute hover:text-[#6556cd] ri-close-fill text-3xl text-white right
 
   <ReactPlayer height={700}
   width={1500}
+  controls
   url={`https://www.youtube.com/watch?v=${ytVideo?.key}`}/>      
         
   </div>

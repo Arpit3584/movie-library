@@ -49,8 +49,9 @@ const Home = () => {
     <SideNav/>
     <div className='w-[80%] h-full overflow-auto overflow-x-hidden'>
     <TopNav/>
-    
+    <div className='mt-3'>
     <Header data={wallPaper}/>
+    </div>
     <div className='flex justify-between p-10'>
     <h1 className='text-3xl font-semibold text-zinc-400'>
         Trending

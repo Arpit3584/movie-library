@@ -8,7 +8,7 @@ export const store=configureStore(
 
             movie:movieReducer,
             tv: tvReducer,
-            persons:personReducer,
+            person:personReducer,
         },
     }
 )

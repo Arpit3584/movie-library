@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import noImage from '../../../public/no_image.jpeg';
+
 
 const HorizontalCards = ({ data }) => {
 
@@ -11,11 +13,11 @@ const HorizontalCards = ({ data }) => {
     <div
      className='w-[100%]  flex overflow-y-hidden mb-5' >
        {
-        data.length>0?data?.map((d,i)=>(
+        data?.length>0?data?.map((d,i)=>(
           <Link to={`/${d.media_type}/details/${d.id}`}
            key={i} className='min-w-[15%] mr-5 p-5'>
             <img className='w-full h-[40%] object-cover'
-            src={`https://image.tmdb.org/t/p/original/${d.backdrop_path||d.profile_path}`}/>
+            src={d.backdrop_path||d.profile_path?`https://image.tmdb.org/t/p/original/${d.backdrop_path||d.profile_path}`:noImage}/>
             <div className=' text-white h-[30vh]'>
             <h1 className='mt-1 text-xl font-semibold'>
           {
