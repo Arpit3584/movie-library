@@ -34,9 +34,9 @@ const SideNav = () => {
             <h5 className='text-white font-semibold text-sm mt-10 mb-5'>
                 INFO
             </h5>
-            <Link className='hover:bg-[#6556CD] hover:text-white duration-200 rounded-lg p-5 text-sm'>
+            <Link to='/about'  className='hover:bg-[#6556CD] hover:text-white duration-200 rounded-lg p-5 text-sm'>
             <i className="mr-2 ri-information-fill"></i>About</Link>
-            <Link className='hover:bg-[#6556CD] hover:text-white duration-200 rounded-lg p-5 text-sm'>
+            <Link to='/contact' className='hover:bg-[#6556CD] hover:text-white duration-200 rounded-lg p-5 text-sm'>
             <i className="mr-2 ri-phone-fill"></i>Contact Us</Link>
             </nav>
     </div>

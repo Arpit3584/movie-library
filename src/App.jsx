@@ -10,6 +10,8 @@ import MovieDetails from './components/partials/MovieDetails';
 import PersonDetails from './components/partials/PersonDetails';
 import TvDetails from './components/partials/TvDetails';
 import Trailer from './components/partials/Trailer';
+import About from './components/partials/About';
+import Contact from './components/partials/Contact'
 
 
 
@@ -29,6 +31,11 @@ import Trailer from './components/partials/Trailer';
 
         <Route path='/people'  element={<People/>}/>
         <Route path="/person/details/:id" element={<PersonDetails/>}/>
+
+        <Route path='/about'  element={<About/>}/>
+        <Route path='/contact'  element={<Contact/>}/>
+
+        
 
       </Routes>
     </div>
